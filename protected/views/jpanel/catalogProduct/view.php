@@ -58,9 +58,6 @@ $this->menu=array(
                                     </thead>
                                     <tbody>
                                         <?php 
-//  $catalog= CategoryProduct::model()->findAll(array(
-  //    'order'=>'category_id desc'
-  //));  
 foreach ($modelcat as $catalotProducr):
     ?>
                                         <tr class="odd gradeX">
