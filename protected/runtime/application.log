@@ -1,0 +1,1377 @@
+2014/09/21 07:26:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "products/index".' in E:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/index')
+#1 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\xampp\apachejs\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/jcommerce/index.php?r=products/index
+---
+2014/09/21 10:14:36 [error] [exception.CException] exception 'CException' with message 'ProductsController cannot find the requested view "create".' in E:\xampp\htdocs\yii\framework\web\CController.php:878
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#1 E:\xampp\apachejs\protected\controllers\ProductsController.php(79): CController->render('create', Array)
+#2 E:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionCreate()
+#3 E:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 E:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 E:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 E:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 E:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 E:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#12 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/create')
+#13 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 E:\xampp\apachejs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/jcommerce/index.php?r=products/create
+HTTP_REFERER=http://localhost/jcommerce/index.php?r=site/login
+---
+2014/09/21 10:58:49 [error] [exception.CException] exception 'CException' with message 'Property "Products.id" is not defined.' in E:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('id')
+#1 E:\xampp\apachejs\protected\views\products\_view.php(37): CActiveRecord->__get('id')
+#2 E:\xampp\htdocs\yii\framework\web\CBaseController.php(130): require('E:\xampp\apache...')
+#3 E:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\xampp\apache...', Array, false)
+#4 E:\xampp\htdocs\yii\framework\zii\widgets\CListView.php(281): CBaseController->renderFile('E:\xampp\apache...', Array)
+#5 E:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(160): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 E:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(143): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{sort...')
+#8 E:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(128): CBaseListView->renderContent()
+#9 E:\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseListView->run()
+#10 E:\xampp\apachejs\protected\views\products\index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 E:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('E:\xampp\apache...')
+#12 E:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\xampp\apache...', Array, true)
+#13 E:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('E:\xampp\apache...', Array, true)
+#14 E:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#15 E:\xampp\apachejs\protected\controllers\ProductsController.php(128): CController->render('index', Array)
+#16 E:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionIndex()
+#17 E:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 E:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 E:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 E:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 E:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 E:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#26 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/index')
+#27 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#28 E:\xampp\apachejs\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/jcommerce/index.php?r=products/index
+---
+2014/09/21 10:59:18 [error] [exception.CException] exception 'CException' with message 'Property "Products.id" is not defined.' in E:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('id')
+#1 E:\xampp\apachejs\protected\views\products\_view.php(37): CActiveRecord->__get('id')
+#2 E:\xampp\htdocs\yii\framework\web\CBaseController.php(130): require('E:\xampp\apache...')
+#3 E:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\xampp\apache...', Array, false)
+#4 E:\xampp\htdocs\yii\framework\zii\widgets\CListView.php(281): CBaseController->renderFile('E:\xampp\apache...', Array)
+#5 E:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(160): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 E:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(143): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{sort...')
+#8 E:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(128): CBaseListView->renderContent()
+#9 E:\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseListView->run()
+#10 E:\xampp\apachejs\protected\views\products\index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 E:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('E:\xampp\apache...')
+#12 E:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\xampp\apache...', Array, true)
+#13 E:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('E:\xampp\apache...', Array, true)
+#14 E:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#15 E:\xampp\apachejs\protected\controllers\ProductsController.php(128): CController->render('index', Array)
+#16 E:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionIndex()
+#17 E:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 E:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 E:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 E:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 E:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 E:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#26 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/index')
+#27 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#28 E:\xampp\apachejs\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/jcommerce/index.php?r=products/index
+---
+2014/09/21 11:02:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "basket".' in E:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('basket')
+#1 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('basket')
+#2 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/basket')
+#3 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 E:\xampp\apachejs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/jcommerce/index.php?r=products/basket&id=1
+HTTP_REFERER=http://localhost/jcommerce/index.php?r=products/index
+---
+2014/09/21 11:05:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "cart".' in E:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('cart')
+#1 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('cart')
+#2 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/cart')
+#3 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 E:\xampp\apachejs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/jcommerce/index.php?r=products/cart
+HTTP_REFERER=http://localhost/jcommerce/index.php?r=products/index
+---
+2014/09/21 11:06:41 [error] [exception.CException] exception 'CException' with message 'Property "Products.id" is not defined.' in E:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('id')
+#1 E:\xampp\apachejs\protected\views\products\cart.php(14): CActiveRecord->__get('id')
+#2 E:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('E:\xampp\apache...')
+#3 E:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\xampp\apache...', Array, true)
+#4 E:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('E:\xampp\apache...', Array, true)
+#5 E:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('cart', Array, true)
+#6 E:\xampp\apachejs\protected\controllers\ProductsController.php(56): CController->render('cart', Array)
+#7 E:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionCart()
+#8 E:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 E:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 E:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 E:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 E:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 E:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('cart')
+#17 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/cart')
+#18 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#19 E:\xampp\apachejs\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/jcommerce/index.php?r=products/cart
+HTTP_REFERER=http://localhost/jcommerce/index.php?r=products/index
+---
+2014/09/21 11:08:28 [error] [exception.CException] exception 'CException' with message 'Property "Products.name" is not defined.' in E:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('name')
+#1 E:\xampp\apachejs\protected\views\products\cart.php(15): CActiveRecord->__get('name')
+#2 E:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('E:\xampp\apache...')
+#3 E:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\xampp\apache...', Array, true)
+#4 E:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('E:\xampp\apache...', Array, true)
+#5 E:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('cart', Array, true)
+#6 E:\xampp\apachejs\protected\controllers\ProductsController.php(56): CController->render('cart', Array)
+#7 E:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionCart()
+#8 E:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 E:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 E:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 E:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 E:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 E:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('cart')
+#17 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/cart')
+#18 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#19 E:\xampp\apachejs\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/jcommerce/index.php?r=products/cart
+---
+2014/09/21 12:03:23 [error] [exception.CException] exception 'CException' with message 'The controller path "E:\xampp\apachejs\protected\controllers\front" is not a valid directory.' in E:\xampp\htdocs\yii\framework\web\CWebApplication.php:422
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\base\CComponent.php(152): CWebApplication->setControllerPath('E:\xampp\apache...')
+#1 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(39): CComponent->__set('controllerPath', 'E:\xampp\apache...')
+#2 E:\xampp\htdocs\yii\framework\base\CComponent.php(558): WebApplicationEndBehavior->changeModulePaths(Object(CEvent))
+#3 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(32): CComponent->raiseEvent('onModuleCreate', Object(CEvent))
+#4 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(23): WebApplicationEndBehavior->onModuleCreate(Object(CEvent))
+#5 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#6 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#7 E:\xampp\apachejs\index.php(9): CComponent->__call('runEnd', Array)
+#8 E:\xampp\apachejs\index.php(9): CWebApplication->runEnd('front')
+#9 {main}
+REQUEST_URI=/jcommerce/index.php?r=site/index
+HTTP_REFERER=http://localhost/jcommerce/index.php?r=products/cart
+---
+2014/09/21 12:04:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "products/index".' in E:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/index')
+#1 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#4 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#5 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#6 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#7 {main}
+REQUEST_URI=/jcommerce/jpanel.php?r=products/index
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php?r=site/login
+---
+2014/09/21 12:04:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "products/index".' in E:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/index')
+#1 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#4 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#5 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#6 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#7 {main}
+REQUEST_URI=/jcommerce/jpanel.php?r=products/index
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php?r=site/contact
+---
+2014/09/21 12:04:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "products/index".' in E:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/index')
+#1 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#4 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#5 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#6 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#7 {main}
+REQUEST_URI=/jcommerce/jpanel.php?r=products/index
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php?r=products/index
+---
+2014/09/21 12:06:14 [error] [exception.CException] exception 'CException' with message 'Alias "ext.bootstrap.components.Bootstrap" is invalid. Make sure it points to an existing PHP file and the file is readable.' in E:\xampp\htdocs\yii\framework\YiiBase.php:316
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\YiiBase.php(196): YiiBase::import('ext.bootstrap.c...', true)
+#1 E:\xampp\htdocs\yii\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 E:\xampp\htdocs\yii\framework\base\CModule.php(523): CModule->getComponent('bootstrap')
+#3 E:\xampp\htdocs\yii\framework\base\CApplication.php(152): CModule->preloadComponents()
+#4 E:\xampp\htdocs\yii\framework\YiiBase.php(125): CApplication->__construct('E:\xampp\apache...')
+#5 E:\xampp\htdocs\yii\framework\YiiBase.php(98): YiiBase::createApplication('CWebApplication', 'E:\xampp\apache...')
+#6 E:\xampp\apachejs\jpanel.php(10): YiiBase::createWebApplication('E:\xampp\apache...')
+#7 {main}
+REQUEST_URI=/jcommerce/jpanel.php
+HTTP_REFERER=http://localhost/jcommerce/jpanel/
+---
+2014/09/21 12:07:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "products/index".' in E:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/index')
+#1 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#4 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#5 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#6 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#7 {main}
+REQUEST_URI=/jcommerce/jpanel.php/products/index
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/site/page?view=about
+---
+2014/09/21 12:11:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "products/index".' in E:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/index')
+#1 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#4 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#5 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#6 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#7 {main}
+REQUEST_URI=/jcommerce/jpanel.php/products/index
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/site/index
+---
+2014/09/21 12:14:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "bootstrap" was not found.' in E:\xampp\htdocs\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('bootstrap')
+#1 E:\xampp\htdocs\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 E:\xampp\htdocs\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 E:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 E:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#9 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#10 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#11 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#12 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#13 {main}
+REQUEST_URI=/jcommerce/jpanel.php/site/page?view=bootstrap
+---
+2014/09/21 12:14:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'View "bootstrap" tidak ditemukan' in E:\xampp\htdocs\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('bootstrap')
+#1 E:\xampp\htdocs\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 E:\xampp\htdocs\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 E:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 E:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#9 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#10 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#11 E:\xampp\apachejs\index.php(9): CComponent->__call('runEnd', Array)
+#12 E:\xampp\apachejs\index.php(9): CWebApplication->runEnd('front')
+#13 {main}
+REQUEST_URI=/jcommerce/index.php?r=site/page&view=bootstrap
+---
+2014/09/21 12:14:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'View "bootstrap" tidak ditemukan' in E:\xampp\htdocs\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('bootstrap')
+#1 E:\xampp\htdocs\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 E:\xampp\htdocs\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 E:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 E:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#9 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#10 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#11 E:\xampp\apachejs\index.php(9): CComponent->__call('runEnd', Array)
+#12 E:\xampp\apachejs\index.php(9): CWebApplication->runEnd('front')
+#13 {main}
+REQUEST_URI=/jcommerce/index.php?r=site/page&view=bootstrap
+---
+2014/09/21 12:14:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'View "bootstrap" tidak ditemukan' in E:\xampp\htdocs\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('bootstrap')
+#1 E:\xampp\htdocs\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 E:\xampp\htdocs\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 E:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 E:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#9 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#10 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#11 E:\xampp\apachejs\index.php(9): CComponent->__call('runEnd', Array)
+#12 E:\xampp\apachejs\index.php(9): CWebApplication->runEnd('front')
+#13 {main}
+REQUEST_URI=/jcommerce/index.php?r=site/page&view=bootstrap
+---
+2014/09/21 12:14:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'View "bootstrap" tidak ditemukan' in E:\xampp\htdocs\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('bootstrap')
+#1 E:\xampp\htdocs\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 E:\xampp\htdocs\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 E:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 E:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#9 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#10 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#11 E:\xampp\apachejs\index.php(9): CComponent->__call('runEnd', Array)
+#12 E:\xampp\apachejs\index.php(9): CWebApplication->runEnd('front')
+#13 {main}
+REQUEST_URI=/jcommerce/index.php?r=site/page&view=bootstrap
+---
+2014/09/21 12:14:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'View "bootstrap" tidak ditemukan' in E:\xampp\htdocs\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('bootstrap')
+#1 E:\xampp\htdocs\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 E:\xampp\htdocs\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 E:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 E:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#9 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#10 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#11 E:\xampp\apachejs\index.php(9): CComponent->__call('runEnd', Array)
+#12 E:\xampp\apachejs\index.php(9): CWebApplication->runEnd('front')
+#13 {main}
+REQUEST_URI=/jcommerce/index.php?r=site/page&view=bootstrap
+---
+2014/09/21 12:14:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'View "bootstrap" tidak ditemukan' in E:\xampp\htdocs\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('bootstrap')
+#1 E:\xampp\htdocs\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 E:\xampp\htdocs\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 E:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 E:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#9 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#10 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#11 E:\xampp\apachejs\index.php(9): CComponent->__call('runEnd', Array)
+#12 E:\xampp\apachejs\index.php(9): CWebApplication->runEnd('front')
+#13 {main}
+REQUEST_URI=/jcommerce/index.php?r=site/page&view=bootstrap
+---
+2014/09/21 15:51:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Sistem tidak bisa menemukan action "cretae" seperti yang diminta.' in E:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('cretae')
+#1 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('cretae')
+#2 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/cretae')
+#3 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#6 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#7 E:\xampp\apachejs\index.php(9): CComponent->__call('runEnd', Array)
+#8 E:\xampp\apachejs\index.php(9): CWebApplication->runEnd('front')
+#9 {main}
+REQUEST_URI=/jcommerce/index.php?r=products/cretae
+---
+2014/09/21 15:55:41 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Token CSRF tidak bisa diverifikasi.' in E:\xampp\htdocs\yii\framework\web\CHttpRequest.php:1042
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\base\CComponent.php(558): CHttpRequest->validateCsrfToken(Object(CEvent))
+#1 E:\xampp\htdocs\yii\framework\base\CApplication.php(196): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#2 E:\xampp\htdocs\yii\framework\base\CApplication.php(167): CApplication->onBeginRequest(Object(CEvent))
+#3 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#4 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#5 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#6 E:\xampp\apachejs\index.php(9): CComponent->__call('runEnd', Array)
+#7 E:\xampp\apachejs\index.php(9): CWebApplication->runEnd('front')
+#8 {main}
+REQUEST_URI=/jcommerce/index.php?r=products/cart
+HTTP_REFERER=http://localhost/jcommerce/index.php?r=products/cart
+---
+2014/09/21 16:04:18 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Token CSRF tidak bisa diverifikasi.' in E:\xampp\htdocs\yii\framework\web\CHttpRequest.php:1042
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\base\CComponent.php(558): CHttpRequest->validateCsrfToken(Object(CEvent))
+#1 E:\xampp\htdocs\yii\framework\base\CApplication.php(196): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#2 E:\xampp\htdocs\yii\framework\base\CApplication.php(167): CApplication->onBeginRequest(Object(CEvent))
+#3 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#4 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#5 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#6 E:\xampp\apachejs\index.php(9): CComponent->__call('runEnd', Array)
+#7 E:\xampp\apachejs\index.php(9): CWebApplication->runEnd('front')
+#8 {main}
+REQUEST_URI=/jcommerce/index.php?r=products/cart
+HTTP_REFERER=http://localhost/jcommerce/index.php?r=products/cart
+---
+2014/09/22 14:07:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ste/index".' in E:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ste/index')
+#1 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#4 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#5 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#6 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#7 {main}
+REQUEST_URI=/jcommerce/jpanel.php/ste/index
+---
+2014/09/22 14:07:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login.html".' in E:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('login.html')
+#1 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login.html')
+#2 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login.html')
+#3 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#6 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#7 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#8 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#9 {main}
+REQUEST_URI=/jcommerce/jpanel.php/site/login.html
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/site/index
+---
+2014/09/22 14:07:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "forms.html".' in E:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('forms.html')
+#1 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('forms.html')
+#2 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/forms.html')
+#3 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#6 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#7 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#8 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#9 {main}
+REQUEST_URI=/jcommerce/jpanel.php/site/forms.html
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/site/login.html
+---
+2014/09/22 14:09:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "forms.html".' in E:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('forms.html')
+#1 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('forms.html')
+#2 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/forms.html')
+#3 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#6 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#7 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#8 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#9 {main}
+REQUEST_URI=/jcommerce/jpanel.php/site/forms.html
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/site/index
+---
+2014/09/22 14:13:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "typography.html".' in E:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('typography.html')
+#1 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('typography.html')
+#2 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/typography...')
+#3 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#6 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#7 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#8 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#9 {main}
+REQUEST_URI=/jcommerce/jpanel.php/site/typography.html
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/site/index
+---
+2014/09/22 14:13:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.html".' in E:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('index.html')
+#1 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index.html')
+#2 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.html')
+#3 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#6 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#7 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#8 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#9 {main}
+REQUEST_URI=/jcommerce/jpanel.php/site/index.html
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/site/typography.html
+---
+2014/09/22 14:23:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "morris.html".' in E:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('morris.html')
+#1 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('morris.html')
+#2 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/morris.htm...')
+#3 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#6 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#7 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#8 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#9 {main}
+REQUEST_URI=/jcommerce/jpanel.php/site/morris.html
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/site/index
+---
+2014/09/22 14:23:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "flot.html".' in E:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('flot.html')
+#1 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('flot.html')
+#2 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/flot.html')
+#3 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#6 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#7 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#8 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#9 {main}
+REQUEST_URI=/jcommerce/jpanel.php/site/flot.html
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/site/morris.html
+---
+2014/09/22 14:23:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.html".' in E:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('index.html')
+#1 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index.html')
+#2 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.html')
+#3 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#6 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#7 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#8 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#9 {main}
+REQUEST_URI=/jcommerce/jpanel.php/site/index.html
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/site/flot.html
+---
+2014/09/22 14:23:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "products".' in E:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products')
+#1 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#4 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#5 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#6 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#7 {main}
+REQUEST_URI=/jcommerce/jpanel.php/products
+---
+2014/09/22 14:40:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.html".' in E:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('index.html')
+#1 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index.html')
+#2 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.html')
+#3 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#6 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#7 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#8 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#9 {main}
+REQUEST_URI=/jcommerce/jpanel.php/site/index.html
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/site/index
+---
+2014/09/22 14:40:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.html".' in E:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('index.html')
+#1 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index.html')
+#2 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.html')
+#3 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#6 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#7 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#8 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#9 {main}
+REQUEST_URI=/jcommerce/jpanel.php/site/index.html
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/site/index.html
+---
+2014/09/22 14:43:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.html".' in E:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('index.html')
+#1 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index.html')
+#2 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.html')
+#3 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#6 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#7 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#8 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#9 {main}
+REQUEST_URI=/jcommerce/jpanel.php/site/index.html
+---
+2014/09/22 14:43:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.html".' in E:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('index.html')
+#1 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index.html')
+#2 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.html')
+#3 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#6 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#7 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#8 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#9 {main}
+REQUEST_URI=/jcommerce/jpanel.php/site/index.html
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/site/index.html
+---
+2014/09/22 14:43:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.html".' in E:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('index.html')
+#1 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index.html')
+#2 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.html')
+#3 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#6 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#7 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#8 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#9 {main}
+REQUEST_URI=/jcommerce/jpanel.php/site/index.html
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/site/index
+---
+2014/09/22 14:43:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login.html".' in E:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('login.html')
+#1 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login.html')
+#2 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login.html')
+#3 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#6 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#7 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#8 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#9 {main}
+REQUEST_URI=/jcommerce/jpanel.php/site/login.html
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/site/index.html
+---
+2014/09/22 14:44:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login.html".' in E:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('login.html')
+#1 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login.html')
+#2 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login.html')
+#3 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#6 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#7 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#8 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#9 {main}
+REQUEST_URI=/jcommerce/jpanel.php/site/login.html
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/site/index.html
+---
+2014/09/22 14:46:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.html".' in E:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('index.html')
+#1 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index.html')
+#2 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.html')
+#3 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#6 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#7 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#8 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#9 {main}
+REQUEST_URI=/jcommerce/jpanel.php/site/index.html
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/site/index
+---
+2014/09/22 14:46:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.html".' in E:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('index.html')
+#1 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index.html')
+#2 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.html')
+#3 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#6 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#7 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#8 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#9 {main}
+REQUEST_URI=/jcommerce/jpanel.php/site/index.html
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/site/index.html
+---
+2014/09/22 14:47:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "flot.html".' in E:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('flot.html')
+#1 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('flot.html')
+#2 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/flot.html')
+#3 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#6 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#7 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#8 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#9 {main}
+REQUEST_URI=/jcommerce/jpanel.php/site/flot.html
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/site/index
+---
+2014/09/22 14:49:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "products/index".' in E:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/index')
+#1 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#4 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#5 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#6 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#7 {main}
+REQUEST_URI=/jcommerce/jpanel.php/products/index
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/site/index
+---
+2014/09/22 14:49:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "products/index".' in E:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/index')
+#1 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#4 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#5 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#6 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#7 {main}
+REQUEST_URI=/jcommerce/jpanel.php/products/index
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/site/contact
+---
+2014/09/22 14:49:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "products/index".' in E:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/index')
+#1 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#4 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#5 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#6 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#7 {main}
+REQUEST_URI=/jcommerce/jpanel.php/products/index
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/site/contact
+---
+2014/09/22 14:57:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "blank.html".' in E:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('blank.html')
+#1 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('blank.html')
+#2 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/blank.html')
+#3 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#6 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#7 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#8 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#9 {main}
+REQUEST_URI=/jcommerce/jpanel.php/site/blank.html
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/site/index
+---
+2014/09/22 14:58:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "typography.html".' in E:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('typography.html')
+#1 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('typography.html')
+#2 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/typography...')
+#3 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#6 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#7 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#8 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#9 {main}
+REQUEST_URI=/jcommerce/jpanel.php/site/typography.html
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/site/index
+---
+2014/09/22 15:03:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "tables.html".' in E:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('tables.html')
+#1 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('tables.html')
+#2 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/tables.htm...')
+#3 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#6 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#7 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#8 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#9 {main}
+REQUEST_URI=/jcommerce/jpanel.php/site/tables.html
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/site/index
+---
+2014/09/22 15:05:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "products".' in E:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('products')
+#1 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('products')
+#2 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/products')
+#3 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#6 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#7 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#8 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#9 {main}
+REQUEST_URI=/jcommerce/jpanel.php/site/products
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/site/index
+---
+2014/09/22 15:05:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "products".' in E:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('products')
+#1 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('products')
+#2 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/products')
+#3 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#6 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#7 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#8 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#9 {main}
+REQUEST_URI=/jcommerce/jpanel.php/site/products
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/site/index
+---
+2014/09/22 15:05:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "products".' in E:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products')
+#1 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#4 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#5 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#6 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#7 {main}
+REQUEST_URI=/jcommerce/jpanel.php/products
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/site/products
+---
+2014/09/22 15:08:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in E:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('index')
+#1 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#4 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#5 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#6 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#7 {main}
+REQUEST_URI=/jcommerce/jpanel.php/index
+---
+2014/09/22 15:08:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "product".' in E:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('product')
+#1 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#4 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#5 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#6 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#7 {main}
+REQUEST_URI=/jcommerce/jpanel.php/product
+---
+2014/09/22 15:08:54 [error] [exception.CException] exception 'CException' with message 'ProductsController cannot find the requested view "index".' in E:\xampp\htdocs\yii\framework\web\CController.php:878
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#1 E:\xampp\apachejs\protected\controllers\jpanel\ProductsController.php(128): CController->render('index', Array)
+#2 E:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionIndex()
+#3 E:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 E:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 E:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 E:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 E:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 E:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#12 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products')
+#13 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#15 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#16 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#17 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#18 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#19 {main}
+REQUEST_URI=/jcommerce/jpanel.php/products
+---
+2014/09/22 15:09:44 [error] [exception.CException] exception 'CException' with message 'ProductsController cannot find the requested view "_search".' in E:\xampp\htdocs\yii\framework\web\CController.php:878
+Stack trace:
+#0 E:\xampp\apachejs\protected\views\jpanel\products\admin.php(40): CController->renderPartial('_search', Array)
+#1 E:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('E:\xampp\apache...')
+#2 E:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\xampp\apache...', Array, true)
+#3 E:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('E:\xampp\apache...', Array, true)
+#4 E:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#5 E:\xampp\apachejs\protected\controllers\jpanel\ProductsController.php(143): CController->render('admin', Array)
+#6 E:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionAdmin()
+#7 E:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 E:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 E:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 E:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 E:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 E:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#16 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/admin')
+#17 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#19 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#20 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#21 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#22 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#23 {main}
+REQUEST_URI=/jcommerce/jpanel.php/products/admin
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/products/create
+---
+2014/09/22 15:11:50 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in E:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(EWebUser), 'You are not aut...')
+#1 E:\xampp\htdocs\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 E:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 E:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 E:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 E:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#8 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products')
+#9 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#11 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#12 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#13 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#14 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#15 {main}
+REQUEST_URI=/jcommerce/jpanel.php/products
+---
+2014/09/22 15:12:00 [error] [exception.CException] exception 'CException' with message 'ProductsController cannot find the requested view "_search".' in E:\xampp\htdocs\yii\framework\web\CController.php:878
+Stack trace:
+#0 E:\xampp\apachejs\protected\views\jpanel\products\admin.php(40): CController->renderPartial('_search', Array)
+#1 E:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('E:\xampp\apache...')
+#2 E:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\xampp\apache...', Array, true)
+#3 E:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('E:\xampp\apache...', Array, true)
+#4 E:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#5 E:\xampp\apachejs\protected\controllers\jpanel\ProductsController.php(82): CController->render('admin', Array)
+#6 E:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionIndex()
+#7 E:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 E:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 E:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 E:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 E:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 E:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#16 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products')
+#17 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#19 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#20 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#21 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#22 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#23 {main}
+REQUEST_URI=/jcommerce/jpanel.php/products
+---
+2014/09/22 15:27:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in E:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('index')
+#1 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#4 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#5 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#6 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#7 {main}
+REQUEST_URI=/jcommerce/jpanel.php/index
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/catalogProduct
+---
+2014/09/22 15:27:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in E:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('index')
+#1 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#4 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#5 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#6 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#7 {main}
+REQUEST_URI=/jcommerce/jpanel.php/index
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/catalogProduct
+---
+2014/09/22 15:30:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in E:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('index')
+#1 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#4 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#5 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#6 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#7 {main}
+REQUEST_URI=/jcommerce/jpanel.php/index
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/catalogProduct
+---
+2014/09/22 15:40:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in E:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('index')
+#1 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#4 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#5 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#6 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#7 {main}
+REQUEST_URI=/jcommerce/jpanel.php/index
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/catalogProduct
+---
+2014/09/22 15:45:54 [error] [exception.CException] exception 'CException' with message 'Property "CategoryProduct.category_name" is not defined.' in E:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('category_name')
+#1 E:\xampp\apachejs\protected\views\jpanel\catalogProduct\index.php(43): CActiveRecord->__get('category_name')
+#2 E:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('E:\xampp\apache...')
+#3 E:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\xampp\apache...', Array, true)
+#4 E:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('E:\xampp\apache...', Array, true)
+#5 E:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#6 E:\xampp\apachejs\protected\controllers\jpanel\CatalogProductController.php(128): CController->render('index', Array)
+#7 E:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): CatalogProductController->actionIndex()
+#8 E:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 E:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 E:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 E:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 E:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 E:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#17 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('catalogProduct')
+#18 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#19 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#20 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#21 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#22 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#23 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#24 {main}
+REQUEST_URI=/jcommerce/jpanel.php/catalogProduct
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/site/index
+---
+2014/09/22 16:19:57 [error] [exception.CException] exception 'CException' with message 'Property "Products." is not defined.' in E:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('')
+#1 E:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('')
+#2 E:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1565): CHtml::resolveValue(Object(Products), NULL)
+#3 E:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(763): CHtml::activeDropDownList(Object(Products), NULL, Array, Array)
+#4 E:\xampp\apachejs\protected\views\jpanel\products\_form.php(26): CActiveForm->dropDownList(Object(Products), NULL, Array)
+#5 E:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('E:\xampp\apache...')
+#6 E:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\xampp\apache...', Array, true)
+#7 E:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('E:\xampp\apache...', Array, true)
+#8 E:\xampp\apachejs\protected\views\jpanel\products\create.php(18): CController->renderPartial('_form', Array)
+#9 E:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('E:\xampp\apache...')
+#10 E:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\xampp\apache...', Array, true)
+#11 E:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('E:\xampp\apache...', Array, true)
+#12 E:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#13 E:\xampp\apachejs\protected\controllers\jpanel\ProductsController.php(79): CController->render('create', Array)
+#14 E:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionCreate()
+#15 E:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 E:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 E:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 E:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 E:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#22 E:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#24 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/create')
+#25 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#26 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#27 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#28 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#29 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#30 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#31 {main}
+REQUEST_URI=/jcommerce/jpanel.php/products/create/2
+---
+2014/09/22 16:51:30 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.category_id" is not defined.' in E:\xampp\htdocs\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 E:\xampp\apachejs\protected\controllers\jpanel\CatalogProductController.php(56): CComponent->__set('category_id', '2')
+#1 [internal function]: CatalogProductController->actionView('2')
+#2 E:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(CatalogProductController), Array)
+#3 E:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CatalogProductController), Object(ReflectionMethod), Array)
+#4 E:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 E:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 E:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 E:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('catalogProduct/...')
+#14 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#16 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#17 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#18 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#19 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#20 {main}
+REQUEST_URI=/jcommerce/jpanel.php/catalogProduct/2
+---
+2014/09/22 16:52:04 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.category_id" is not defined.' in E:\xampp\htdocs\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 E:\xampp\apachejs\protected\controllers\jpanel\CatalogProductController.php(56): CComponent->__set('category_id', '2')
+#1 [internal function]: CatalogProductController->actionView('2')
+#2 E:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(CatalogProductController), Array)
+#3 E:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CatalogProductController), Object(ReflectionMethod), Array)
+#4 E:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 E:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 E:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 E:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('catalogProduct/...')
+#14 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#16 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#17 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#18 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#19 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#20 {main}
+REQUEST_URI=/jcommerce/jpanel.php/catalogProduct/2
+---
+2014/09/22 16:52:26 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.category_id" is not defined.' in E:\xampp\htdocs\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 E:\xampp\apachejs\protected\controllers\jpanel\CatalogProductController.php(56): CComponent->__set('category_id', '2')
+#1 [internal function]: CatalogProductController->actionView('2')
+#2 E:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(CatalogProductController), Array)
+#3 E:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CatalogProductController), Object(ReflectionMethod), Array)
+#4 E:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 E:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 E:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 E:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('catalogProduct/...')
+#14 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#16 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#17 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#18 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#19 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#20 {main}
+REQUEST_URI=/jcommerce/jpanel.php/catalogProduct/2
+---
+2014/09/22 16:53:23 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.category_id" is not defined.' in E:\xampp\htdocs\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 E:\xampp\apachejs\protected\controllers\jpanel\CatalogProductController.php(56): CComponent->__set('category_id', '2')
+#1 [internal function]: CatalogProductController->actionView('2')
+#2 E:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(CatalogProductController), Array)
+#3 E:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CatalogProductController), Object(ReflectionMethod), Array)
+#4 E:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 E:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 E:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 E:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('catalogProduct/...')
+#14 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#16 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#17 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#18 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#19 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#20 {main}
+REQUEST_URI=/jcommerce/jpanel.php/catalogProduct/2
+---
+2014/09/22 16:53:44 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.category_id" is not defined.' in E:\xampp\htdocs\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 E:\xampp\apachejs\protected\controllers\jpanel\CatalogProductController.php(56): CComponent->__set('category_id', '2')
+#1 [internal function]: CatalogProductController->actionView('2')
+#2 E:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(CatalogProductController), Array)
+#3 E:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CatalogProductController), Object(ReflectionMethod), Array)
+#4 E:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 E:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 E:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 E:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('catalogProduct/...')
+#14 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#16 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#17 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#18 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#19 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#20 {main}
+REQUEST_URI=/jcommerce/jpanel.php/catalogProduct/2
+---
+2014/09/22 16:58:50 [error] [exception.CException] exception 'CException' with message 'Property "Products.cat_name" is not defined.' in E:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('cat_name')
+#1 E:\xampp\apachejs\protected\views\jpanel\catalogProduct\view.php(131): CActiveRecord->__get('cat_name')
+#2 E:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('E:\xampp\apache...')
+#3 E:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\xampp\apache...', Array, true)
+#4 E:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('E:\xampp\apache...', Array, true)
+#5 E:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#6 E:\xampp\apachejs\protected\controllers\jpanel\CatalogProductController.php(70): CController->render('view', Array)
+#7 [internal function]: CatalogProductController->actionView('2')
+#8 E:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(CatalogProductController), Array)
+#9 E:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CatalogProductController), Object(ReflectionMethod), Array)
+#10 E:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 E:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 E:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 E:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 E:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 E:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#19 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('catalogProduct/...')
+#20 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#22 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#23 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#24 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#25 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#26 {main}
+REQUEST_URI=/jcommerce/jpanel.php/catalogProduct/2
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/catalogProduct/1
+---
+2014/09/22 17:37:11 [error] [php] Creating default object from empty value (E:\xampp\apachejs\protected\controllers\jpanel\CatalogProductController.php:57)
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 E:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CatalogProductController->runAction()
+#3 E:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 E:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 E:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CatalogProductController->filterAccessControl()
+#6 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 E:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 E:\xampp\htdocs\yii\framework\web\CController.php(265): CatalogProductController->runActionWithFilters()
+#9 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CatalogProductController->run()
+#10 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CWebApplication->run()
+#13 unknown(0): WebApplicationEndBehavior->runEnd()
+#14 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array()
+#15 E:\xampp\apachejs\jpanel.php(10): CWebApplication->__call()
+#16 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd()
+REQUEST_URI=/jcommerce/jpanel.php/catalogProduct/2
+in E:\xampp\apachejs\protected\controllers\jpanel\CatalogProductController.php (57)
+in E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php (25)
+in E:\xampp\apachejs\jpanel.php (10)
+2014/09/22 18:01:59 [error] [exception.CException] exception 'CException' with message 'Property "Products.is_show" is not defined.' in E:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('is_show')
+#1 E:\xampp\apachejs\protected\views\jpanel\catalogProduct\view.php(136): CActiveRecord->__get('is_show')
+#2 E:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('E:\xampp\apache...')
+#3 E:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\xampp\apache...', Array, true)
+#4 E:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('E:\xampp\apache...', Array, true)
+#5 E:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#6 E:\xampp\apachejs\protected\controllers\jpanel\CatalogProductController.php(86): CController->render('view', Array)
+#7 [internal function]: CatalogProductController->actionView('2')
+#8 E:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(CatalogProductController), Array)
+#9 E:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CatalogProductController), Object(ReflectionMethod), Array)
+#10 E:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 E:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 E:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 E:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 E:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 E:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#19 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('catalogProduct/...')
+#20 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#22 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#23 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#24 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#25 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#26 {main}
+REQUEST_URI=/jcommerce/jpanel.php/catalogProduct/2
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/catalogProduct
+---
+2014/09/22 18:10:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "catalogProduct".' in E:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('catalogProduct')
+#1 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('catalogProduct')
+#2 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/catalo...')
+#3 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#6 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#7 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#8 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#9 {main}
+REQUEST_URI=/jcommerce/jpanel.php/products/catalogProduct
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/products/create/2
+---
+2014/09/22 18:31:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "enable".' in E:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('enable')
+#1 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('enable')
+#2 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('catalogProduct/...')
+#3 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#6 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#7 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#8 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#9 {main}
+REQUEST_URI=/jcommerce/jpanel.php/catalogProduct/enable/5
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/catalogProduct/2
+---
+2014/09/22 18:37:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "enable".' in E:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('enable')
+#1 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('enable')
+#2 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('catalogProduct/...')
+#3 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#5 [internal function]: WebApplicationEndBehavior->runEnd('jpanel')
+#6 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#7 E:\xampp\apachejs\jpanel.php(10): CComponent->__call('runEnd', Array)
+#8 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd('jpanel')
+#9 {main}
+REQUEST_URI=/jcommerce/jpanel.php/catalogProduct/enable/5
+HTTP_REFERER=http://localhost/jcommerce/jpanel.php/catalogProduct/2
+---
+2014/09/22 18:39:21 [error] [php] include(Komentar.php): failed to open stream: No such file or directory (E:\xampp\htdocs\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 E:\xampp\apachejs\protected\controllers\jpanel\ProductsController.php(49): spl_autoload_call()
+#1 unknown(0): ProductsController->actionEnable()
+#2 E:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#3 E:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 E:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): ProductsController->runAction()
+#6 E:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 E:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): ProductsController->filterAccessControl()
+#9 E:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 E:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\xampp\htdocs\yii\framework\web\CController.php(265): ProductsController->runActionWithFilters()
+#12 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ProductsController->run()
+#13 E:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 E:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php(25): CWebApplication->run()
+#16 unknown(0): WebApplicationEndBehavior->runEnd()
+#17 E:\xampp\htdocs\yii\framework\base\CComponent.php(260): call_user_func_array()
+#18 E:\xampp\apachejs\jpanel.php(10): CWebApplication->__call()
+#19 E:\xampp\apachejs\jpanel.php(10): CWebApplication->runEnd()
+REQUEST_URI=/jcommerce/jpanel.php/products/enable/id/5
+in E:\xampp\apachejs\protected\controllers\jpanel\ProductsController.php (49)
+in E:\xampp\apachejs\protected\components\WebApplicationEndBehavior.php (25)
+in E:\xampp\apachejs\jpanel.php (10)

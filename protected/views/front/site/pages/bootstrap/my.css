@@ -1,0 +1,27 @@
+body {
+  padding-top: 90px; 
+}
+
+section {
+  padding-top: 80px; 
+}
+
+.subnav.navbar-fixed-top {
+    top: 40px;
+}
+
+.mylead {
+  font-size: 16px;  
+}
+
+.download {
+  padding-top: 10px;  
+}
+
+.text-error {
+    color: #B94A48;
+}
+
+#EditableDetailView th {
+    width: 50%;   
+}
